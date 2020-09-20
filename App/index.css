@@ -1,0 +1,73 @@
+:root {
+    --main-bg-dark-color: #222222;
+    --main-bg-light-color: #333333;
+    --main-text-color: #ffffff;
+
+    --titelbar-appname-color: #bbbbbb;
+    --titelbar-symbol-color: #bbbbbb;
+    --titelbar-symbol-hover-color: #707070;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    background: var(--main-bg-dark-color);
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'proxima-nova', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+}
+
+#TitelBar {
+    width: 100%;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    background: var(--main-bg-light-color);
+    /*box-shadow: 0px 4px 8px black;*/
+    display: block;
+    line-height: 30px;
+    font-size: 10px;
+    -webkit-user-select: none;
+    -webkit-app-region: drag;
+}
+
+#AppName {
+    color: var(--titelbar-appname-color);
+    float: left;
+    padding-left: 15px;
+}
+
+#WindowButtons {
+    color: var(--titelbar-symbol-color);
+    float: right;
+    -webkit-app-region: no-drag;
+}
+
+#minimize,
+#maximize,
+#close {
+    width: 40px;
+    height: 100%;
+    text-align: center;
+    float: left;
+    padding: 0px;
+    background-color: var(--main-bg-light-color);
+}
+
+#minimize:hover,
+#maximize:hover {
+    background-color: var(--titelbar-symbol-hover-color);
+}
+
+#close:hover {
+    background-color: #ff0000;
+}

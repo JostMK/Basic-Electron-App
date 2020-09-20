@@ -1,0 +1,25 @@
+{
+  "name": "basic-electron-app",
+  "version": "1.0.0",
+  "description": "A basic electron project containing a default window with a title bar.",
+  "main": "setup.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JostMK/Basic-Electron-App.git"
+  },
+  "author": "JostMK",
+  "license": "SEE LICENSE IN .\\LICENSE",
+  "bugs": {
+    "url": "https://github.com/JostMK/Basic-Electron-App/issues"
+  },
+  "homepage": "https://github.com/JostMK/Basic-Electron-App#readme",
+  "dependencies": {
+    "jquery": "^3.5.1"
+  },
+  "devDependencies": {
+    "electron": "^10.1.2"
+  }
+}
